@@ -23,7 +23,7 @@ function [link_lines] = draw_links(arm)
 %         V = V*0.1 + end_points(2,2);
 %         W = W*0.1 + end_points(2,3);
 %         
-        link_lines{i} = surf(X,Y,Z, 'FaceColor', colors{i});
+          link_lines{i} = surf(arm.ax, X,Y,Z, 'FaceColor', colors{i});
 %         link_lines{2*i} = surf(U,V,W);
     end
 %         x_axis = end_points(2,:) - end_points(1,:);
